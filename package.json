@@ -1,0 +1,47 @@
+{
+  "name": "career-steward",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An evidence-grounded, local-first job-search agent built on Pi.",
+  "license": "MIT",
+  "author": "hfbillion",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hfbillion/career-steward.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hfbillion/career-steward/issues"
+  },
+  "homepage": "https://github.com/hfbillion/career-steward#readme",
+  "keywords": [
+    "pi-agent",
+    "career",
+    "job-search",
+    "resume",
+    "ats",
+    "agent"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:acceptance": "vitest run test/e2e-career-journey.test.ts",
+    "test:watch": "vitest",
+    "release:check": "npm run check && npm test && npm run build"
+  },
+  "dependencies": {
+    "@earendil-works/pi-coding-agent": "^1.4.0",
+    "docx": "9.6.1",
+    "pdfjs-dist": "^6.4.299",
+    "typebox": "^1.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.6"
+  }
+}

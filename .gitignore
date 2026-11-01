@@ -41,6 +41,18 @@ build/Release
 node_modules/
 jspm_packages/
 
+# Career Steward local data
+.career-steward/
+career-steward-backups/
+career-steward-exports/*
+resumes/
+private/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3
+*.db
+
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
 
@@ -147,3 +159,6 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+
+.pi
